@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#1c1f2e" />
+  <circle cx="256" cy="256" r="200" fill="#1c1f2e" stroke="#ff3b5c" stroke-width="20" />
+  <circle cx="256" cy="256" r="150" fill="#ff3b5c" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="100" font-family="sans-serif" font-weight="bold">CHPV</text>
+  
+  <line x1="256" y1="56" x2="256" y2="16" stroke="#ff3b5c" stroke-width="20" stroke-linecap="round"/>
+  <line x1="256" y1="456" x2="256" y2="496" stroke="#ff3b5c" stroke-width="20" stroke-linecap="round"/>
+  <line x1="56" y1="256" x2="16" y2="256" stroke="#ff3b5c" stroke-width="20" stroke-linecap="round"/>
+  <line x1="456" y1="256" x2="496" y2="256" stroke="#ff3b5c" stroke-width="20" stroke-linecap="round"/>
+  
+  <line x1="114" y1="114" x2="86" y2="86" stroke="#ff3b5c" stroke-width="20" stroke-linecap="round"/>
+  <line x1="398" y1="398" x2="426" y2="426" stroke="#ff3b5c" stroke-width="20" stroke-linecap="round"/>
+  <line x1="114" y1="398" x2="86" y2="426" stroke="#ff3b5c" stroke-width="20" stroke-linecap="round"/>
+  <line x1="398" y1="114" x2="426" y2="86" stroke="#ff3b5c" stroke-width="20" stroke-linecap="round"/>
+</svg>
