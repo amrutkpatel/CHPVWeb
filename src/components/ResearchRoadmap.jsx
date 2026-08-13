@@ -17,22 +17,23 @@ const ResearchRoadmap = () => {
       </div>
 
       <div className="glass-panel">
-        <h3>Therapeutics Pipeline</h3>
+        <h3>Vaccines & Therapeutics Pipeline</h3>
         <div style={{marginTop: '2rem'}}>
           
           <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
             <span style={{fontWeight: 'bold', color: 'var(--text-secondary)'}}>Discovery</span>
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.8rem', borderLeft: '3px solid var(--surface-border)', paddingLeft: '1rem'}}>
-               <div style={{background: 'var(--bg-color)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--surface-border)', fontSize: '0.85rem'}}>mAbs / mRNA Vaccines</div>
+               <div style={{background: 'var(--bg-color)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--surface-border)', fontSize: '0.85rem'}}>mAbs (Therapeutic)</div>
+               <div style={{background: 'var(--bg-color)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--surface-border)', fontSize: '0.85rem'}}>mRNA (Vaccine)</div>
             </div>
           </div>
           
           <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
             <span style={{fontWeight: 'bold', color: 'var(--text-secondary)'}}>Preclinical</span>
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.8rem', borderLeft: '3px solid #10b981', paddingLeft: '1rem'}}>
-               <div style={{background: 'rgba(16, 185, 129, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #10b981', color: '#10b981', fontSize: '0.85rem'}}>Favipiravir</div>
-               <div style={{background: 'rgba(16, 185, 129, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #10b981', color: '#10b981', fontSize: '0.85rem'}}>Recombinant G Protein</div>
-               <div style={{background: 'rgba(245, 158, 11, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #f59e0b', color: '#f59e0b', fontSize: '0.85rem'}}>siRNA</div>
+               <div style={{background: 'rgba(16, 185, 129, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #10b981', color: '#10b981', fontSize: '0.85rem'}}>Favipiravir (Therapeutic)</div>
+               <div style={{background: 'rgba(16, 185, 129, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #10b981', color: '#10b981', fontSize: '0.85rem'}}>Recombinant G Protein (Vaccine)</div>
+               <div style={{background: 'rgba(245, 158, 11, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #f59e0b', color: '#f59e0b', fontSize: '0.85rem'}}>siRNA (Therapeutic)</div>
             </div>
           </div>
           
