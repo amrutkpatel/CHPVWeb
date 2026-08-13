@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+import { useState, useEffect, useContext } from 'react';
+import './App.css';
+// Language context removed; using local state
+import { translate } from './utils/translate';
 import Hero from './components/Hero'
 import Virology from './components/Virology'
 import Epidemiology from './components/Epidemiology'
@@ -12,6 +14,7 @@ import ResearchRoadmap from './components/ResearchRoadmap'
 import References from './components/References'
 
 function App() {
+  const [language, setLanguage] = useState('en');
   const [activeTab, setActiveTab] = useState('hero')
   const [touchStartX, setTouchStartX] = useState(null)
 
@@ -70,45 +73,49 @@ function App() {
   };
 
   return (
-    <div className="app-layout">
-      <nav className="side-nav">
-        <div className="nav-container">
-          <button className={activeTab === 'hero' ? 'active' : ''} onClick={() => setActiveTab('hero')}>Overview</button>
-          <button className={activeTab === 'epidemiology' ? 'active' : ''} onClick={() => setActiveTab('epidemiology')}>Epidemiology</button>
-          <button className={activeTab === 'ecology' ? 'active' : ''} onClick={() => setActiveTab('ecology')}>Ecology</button>
-          <button className={activeTab === 'virology' ? 'active' : ''} onClick={() => setActiveTab('virology')}>Biology</button>
-          <button className={activeTab === 'genomics' ? 'active' : ''} onClick={() => setActiveTab('genomics')}>Genomics</button>
-          <button className={activeTab === 'diagnosis' ? 'active' : ''} onClick={() => setActiveTab('diagnosis')}>Diagnosis</button>
-          <button className={activeTab === 'therapeutics' ? 'active' : ''} onClick={() => setActiveTab('therapeutics')}>Vaccines & Therapeutics</button>
-          <button className={activeTab === 'knowledge-matrix' ? 'active' : ''} onClick={() => setActiveTab('knowledge-matrix')}>Knowledge Matrix</button>
-          <button className={activeTab === 'roadmap' ? 'active' : ''} onClick={() => setActiveTab('roadmap')}>Research</button>
-        </div>
-      </nav>
-      
-      <main 
-        className="main-content"
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-      >
-        <h1 className="hero-title" style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '1rem', padding: '0 1rem' }}>Chandipura Virus (CHPV)</h1>
-        <div className="container" style={{ minHeight: '60vh', paddingTop: '1rem' }}>
-          {activeTab === 'hero' && <div id="hero"><Hero /></div>}
-          {activeTab === 'epidemiology' && <Epidemiology />}
-          {activeTab === 'ecology' && <Ecology />}
-          {activeTab === 'virology' && <Virology />}
-          {activeTab === 'genomics' && <Genomics />}
-          {activeTab === 'diagnosis' && <Diagnosis />}
-          {activeTab === 'therapeutics' && <Therapeutics />}
-          {activeTab === 'knowledge-matrix' && <KnowledgeMatrix />}
-          {activeTab === 'roadmap' && <ResearchRoadmap />}
-        </div>
-        
-        <div className="container">
-          <References citedIds={tabReferences[activeTab]} />
-        </div>
-      </main>
-    </div>
-  )
+      <div className="app-layout">
+        <nav className="side-nav">
+          <div className="nav-container">
+            <button className="lang-toggle" onClick={() => setLanguage(language === 'en' ? 'gu' : 'en')}>
+              {language === 'en' ? 'ગુજરાતી' : 'English'}
+            </button>
+            <button className={activeTab === 'hero' ? 'active' : ''} onClick={() => setActiveTab('hero')}>{translate('overview', language)}</button>
+            <button className={activeTab === 'epidemiology' ? 'active' : ''} onClick={() => setActiveTab('epidemiology')}>{translate('epidemiology', language)}</button>
+            <button className={activeTab === 'ecology' ? 'active' : ''} onClick={() => setActiveTab('ecology')}>{translate('ecology', language)}</button>
+            <button className={activeTab === 'virology' ? 'active' : ''} onClick={() => setActiveTab('virology')}>{translate('biology', language)}</button>
+            <button className={activeTab === 'genomics' ? 'active' : ''} onClick={() => setActiveTab('genomics')}>{translate('genomics', language)}</button>
+            <button className={activeTab === 'diagnosis' ? 'active' : ''} onClick={() => setActiveTab('diagnosis')}>{translate('diagnosis', language)}</button>
+            <button className={activeTab === 'therapeutics' ? 'active' : ''} onClick={() => setActiveTab('therapeutics')}>{translate('vaccinesTherapeutics', language)}</button>
+            <button className={activeTab === 'knowledge-matrix' ? 'active' : ''} onClick={() => setActiveTab('knowledge-matrix')}>{translate('knowledgeMatrix', language)}</button>
+            <button className={activeTab === 'roadmap' ? 'active' : ''} onClick={() => setActiveTab('roadmap')}>{translate('research', language)}</button>
+          </div>
+        </nav>
+        <main
+          className="main-content"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
+          <>
+            <h1 className="hero-title" style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '1rem', padding: '0 1rem' }}>Chandipura Virus (CHPV)</h1>
+            <div className="container" style={{ minHeight: '60vh', paddingTop: '1rem' }}>
+              {activeTab === 'hero' && <div id="hero"><Hero language={language} /></div>}
+              {activeTab === 'epidemiology' && <Epidemiology language={language} />}
+              {activeTab === 'ecology' && <Ecology language={language} />}
+              {activeTab === 'virology' && <Virology language={language} />}
+              {activeTab === 'genomics' && <Genomics language={language} />}
+              {activeTab === 'diagnosis' && <Diagnosis language={language} />}
+              {activeTab === 'therapeutics' && <Therapeutics language={language} />}
+              {activeTab === 'knowledge-matrix' && <KnowledgeMatrix language={language} />}
+              {activeTab === 'roadmap' && <ResearchRoadmap language={language} />}
+            </div>
+            <div className="container">
+              <References citedIds={tabReferences[activeTab]} language={language} />
+            </div>
+          </>
+        </main>
+      </div>
+    
+  );
 }
 
 export default App

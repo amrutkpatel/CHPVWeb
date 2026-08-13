@@ -1,34 +1,34 @@
-import React from 'react';
+import { translate } from '../utils/translate';
 
-const Genomics = () => {
+const Genomics = ({ language }) => {
   return (
     <section id="genomics">
-      <h2 className="section-title">Genomics & Evolution</h2>
+      <h2 className="section-title">{translate('genomics_heading', language)}</h2>
       
       <div className="glass-panel" style={{marginBottom: '2rem'}}>
-        <h3>The 2024 Gujarat Whole-Genome Sequence</h3>
+        <h3>{translate('genomics_sub_heading', language)}</h3>
         <p>
-          A major development is the 2026 publication of the whole-genome sequence from a 12-year-old patient from Patan, Gujarat (2024 outbreak).<sup><a href="#ref-5">[5]</a></sup>
+          {translate('genomics_pub_desc', language)}<sup><a href="#ref-5">[5]</a></sup>
         </p>
         <div style={{display: 'flex', gap: '2rem', marginTop: '1rem', flexWrap: 'wrap'}}>
           <div style={{flex: 1, background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '8px'}}>
-            <h4 style={{color: 'var(--blue-accent)'}}>Sequence Highlights</h4>
+            <h4 style={{color: 'var(--blue-accent)'}}>{translate('genomics_seq_highlights', language)}</h4>
             <ul>
-              <li>~293 nucleotide changes relative to historical reference</li>
-              <li>~24 nonsynonymous substitutions</li>
-              <li>Overall conserved CHPV organization</li>
+              <li>{translate('genomics_seq_1', language)}</li>
+              <li>{translate('genomics_seq_2', language)}</li>
+              <li>{translate('genomics_seq_3', language)}</li>
             </ul>
           </div>
           <div style={{flex: 1, background: 'rgba(239, 68, 68, 0.1)', border: '1px solid #ef4444', padding: '1rem', borderRadius: '8px'}}>
-            <h4 style={{color: '#ef4444'}}>Crucial Warning</h4>
-            <p><strong>Mutation ≠ Increased Virulence.</strong></p>
-            <p>The available evidence does not currently establish that these mutations caused increased virulence or transmissibility. Functional reverse genetics experiments are needed.</p>
+            <h4 style={{color: '#ef4444'}}>{translate('genomics_crucial_warning', language)}</h4>
+            <p><strong>{translate('genomics_mutation_note', language)}</strong></p>
+            <p>{translate('genomics_evidence_desc', language)}</p>
           </div>
         </div>
       </div>
       
       <p style={{textAlign: 'center', color: 'var(--text-secondary)'}}>
-        The current genomic dataset remains surprisingly small compared to other viruses, hindering efforts to map transmission chains and vector-associated evolution.
+        {translate('genomics_dataset_note', language)}
       </p>
     </section>
   );

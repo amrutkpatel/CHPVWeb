@@ -60,6 +60,27 @@
   box-shadow: 0 0 10px var(--accent-glow);
 }
 
+.lang-toggle {
+  background: linear-gradient(135deg, #ff3b5c, #e63356) !important;
+  color: #fff !important;
+  border: none !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 20px !important;
+  cursor: pointer;
+  text-align: center !important;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 59, 92, 0.3) !important;
+}
+
+.lang-toggle:hover {
+  background: linear-gradient(135deg, #e63356, #cc2a48) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 59, 92, 0.4) !important;
+}
+
 .app-header {
   min-height: 100vh;
   display: flex;

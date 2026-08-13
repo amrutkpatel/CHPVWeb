@@ -1,69 +1,70 @@
 import React from 'react';
+import { translate } from '../utils/translate';
 
-const Ecology = () => {
+const Ecology = ({ language }) => {
   return (
     <section id="ecology">
-      <h2 className="section-title">Vector Ecology & Hosts</h2>
+      <h2 className="section-title">{translate('ecology_heading', language)}</h2>
       
       <div className="glass-panel" style={{marginBottom: '2rem'}}>
-        <h3>Vectors & Hosts</h3>
+        <h3>{translate('vectors_hosts_title', language)}</h3>
         <div className="grid-layout" style={{marginTop: '1rem'}}>
           <div>
-            <h4>Primary Vectors</h4>
+            <h4>{translate('primary_vectors', language)}</h4>
             <p>
-              <strong>Phlebotomine Sandflies</strong> are the best-supported vectors, closely linked to rural Indian outbreaks. Outbreaks have a striking association with the monsoon, early post-monsoon periods, mud walls, and cattle sheds.<sup><a href="#ref-12">[12]</a></sup>
+              <strong>{translate('phlebotomine_sandflies', language)}</strong> {translate('phlebotomine_desc', language)}<sup><a href="#ref-12">[12]</a></sup>
             </p>
             <p style={{marginTop: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)'}}>
-              Interestingly, CHPV RNA has also been detected in male sandflies, hinting at potential vertical transmission within the vector.<sup><a href="#ref-3">[3]</a></sup>
+              {translate('sandfly_vertical_transmission', language)}<sup><a href="#ref-3">[3]</a></sup>
             </p>
           </div>
           <div>
-            <h4>Intermediate & Reservoir Hosts</h4>
+            <h4>{translate('intermediate_reservoir_hosts', language)}</h4>
             <p>
-              While sandflies are the primary vectors, various vertebrate species are part of the transmission cycle.
+              {translate('intermediate_hosts_desc', language)}
             </p>
             <ul style={{listStyle: 'circle', paddingLeft: '20px', marginTop: '0.5rem'}}>
-              <li style={{marginBottom: '0.5rem'}}><strong>Intermediate Hosts / Amplifiers:</strong> Domestic animals like cattle, pigs, and sheep often live close to human dwellings. Their presence attracts zoophilic sandflies (like Sergentomyia), creating a bridge for human exposure.<sup><a href="#ref-11">[11]</a></sup></li>
-              <li style={{marginBottom: '0.5rem'}}><strong>Reservoir Hosts:</strong> Hedgehogs and rodents are suspected to be natural reservoirs in the wild, helping maintain the virus silently during inter-epidemic periods.<sup><a href="#ref-11">[11]</a></sup></li>
+              <li style={{marginBottom: '0.5rem'}}><strong>{translate('intermediate_hosts_amplifiers', language)}</strong> {translate('intermediate_hosts_detail', language)}<sup><a href="#ref-11">[11]</a></sup></li>
+              <li style={{marginBottom: '0.5rem'}}><strong>{translate('reservoir_hosts', language)}</strong> {translate('reservoir_hosts_detail', language)}<sup><a href="#ref-11">[11]</a></sup></li>
             </ul>
           </div>
         </div>
       </div>
 
       <div className="glass-panel" style={{marginBottom: '2rem'}}>
-        <h3>The "Geographic Shift" Hypothesis</h3>
+        <h3>{translate('geographic_shift_hypothesis', language)}</h3>
         <p>
-          Historically, major outbreaks occurred in Andhra Pradesh and Maharashtra (e.g. 2003). Recently, the burden has seemingly shifted to Gujarat (2024, 2026). However, the evidence suggests the virus hasn't simply "migrated". 
+          {translate('geographic_shift_desc', language)}
         </p>
         <p style={{marginTop: '1rem', color: 'var(--accent-color)', fontWeight: 'bold'}}>
-          Rather than the virus moving, the Vector/Environment ecology may be changing.
+          {translate('geographic_shift_note', language)}
         </p>
         <p style={{marginTop: '1rem'}}>
-          In 2018, CHPV was detected in Gujarat sandflies (including males, hinting at vertical transmission), matching the 2003 AP strain. This indicates an established, silent reservoir system that only boils over into human outbreaks when climate, vector density, and human exposure perfectly align.<sup><a href="#ref-3">[3]</a></sup>
+          {translate('geographic_shift_detail', language)}<sup><a href="#ref-3">[3]</a></sup>
         </p>
       </div>
 
       <div className="grid-layout">
         <div className="glass-panel">
-          <h3>The One Health Model</h3>
+          <h3>{translate('one_health_model', language)}</h3>
           <div style={{background: 'var(--bg-color)', padding: '1rem', borderRadius: '8px', textAlign: 'center'}}>
-            <p><strong>Climate / Environment</strong></p>
+            <p><strong>{translate('climate_environment', language)}</strong></p>
             <p>↓</p>
-            <p><strong>Vector Abundance</strong></p>
+            <p><strong>{translate('vector_abundance', language)}</strong></p>
             <p>↓</p>
-            <p><strong>Vector Infection & Animal Interaction</strong></p>
+            <p><strong>{translate('vector_infection_animal_interaction', language)}</strong></p>
             <p>↓</p>
-            <p><strong>Human Exposure (Children)</strong></p>
+            <p><strong>{translate('human_exposure_children', language)}</strong></p>
           </div>
         </div>
         
         <div className="glass-panel">
-          <h3>Key Environmental Drivers</h3>
+          <h3>{translate('key_environmental_drivers', language)}</h3>
           <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
-            <li style={{marginBottom: '0.5rem'}}><strong>Monsoon/Post-monsoon:</strong> Ideal breeding humidity</li>
-            <li style={{marginBottom: '0.5rem'}}><strong>Housing:</strong> Mud walls and crevices serve as sandfly habitats</li>
-            <li style={{marginBottom: '0.5rem'}}><strong>Livestock proximity:</strong> Cattle sheds attract zoophilic sandflies like Sergentomyia</li>
-            <li style={{marginBottom: '0.5rem'}}><strong>Land-use changes:</strong> Shifting agricultural practices may alter the vector-human interface</li>
+            <li style={{marginBottom: '0.5rem'}}>{translate('monsoon_post_monsoon', language)}</li>
+            <li style={{marginBottom: '0.5rem'}}>{translate('housing', language)}</li>
+            <li style={{marginBottom: '0.5rem'}}>{translate('livestock_proximity', language)}</li>
+            <li style={{marginBottom: '0.5rem'}}>{translate('land_use_changes', language)}</li>
           </ul>
         </div>
       </div>

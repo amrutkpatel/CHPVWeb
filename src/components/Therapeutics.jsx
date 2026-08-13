@@ -1,52 +1,52 @@
-import React from 'react';
+import { translate } from '../utils/translate';
 
-const Therapeutics = () => {
+const Therapeutics = ({ language }) => {
   return (
     <section id="therapeutics">
-      <h2 className="section-title">Therapeutics & Vaccines</h2>
+      <h2 className="section-title">{translate('therapeutics_heading', language)}</h2>
       
       <div className="grid-layout">
         <div className="glass-panel" style={{borderColor: 'rgba(255, 59, 92, 0.5)'}}>
-          <h3 style={{color: 'var(--accent-color)'}}>Current Clinical Status</h3>
+          <h3 style={{color: 'var(--accent-color)'}}>{translate('therapeutics_current_status', language)}</h3>
           <p>
-            There is <strong>no licensed CHPV vaccine</strong> and <strong>no approved CHPV-specific antiviral therapy</strong> as of 2026. Management remains primarily intensive supportive care (airway management, anticonvulsants, and managing cerebral edema). 
+            {translate('therapeutics_status_desc1', language)} <strong>{translate('therapeutics_no_vaccine', language)}</strong> {translate('therapeutics_status_desc2', language)} <strong>{translate('therapeutics_no_antiviral', language)}</strong> {translate('therapeutics_status_desc3', language)} 
           </p>
         </div>
 
         <div className="glass-panel">
-          <h3>Vaccine Development</h3>
+          <h3>{translate('therapeutics_vaccine_dev', language)}</h3>
           <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
             <li style={{marginBottom: '10px'}}>
-              <strong>Recombinant G-protein Vaccine:</strong> The glycoprotein (G) is the primary target for neutralizing antibodies. Preclinical trials using recombinant G-protein vaccines have shown robust immunogenicity and ~90% protection in murine models.<sup><a href="#ref-6">[6]</a></sup>
+              <strong>{translate('therapeutics_vaccine_1_title', language)}</strong> {translate('therapeutics_vaccine_1_desc', language)}<sup><a href="#ref-6">[6]</a></sup>
             </li>
             <li style={{marginBottom: '10px'}}>
-              <strong>Inactivated Virus Candidates:</strong> Early studies explored formalin-inactivated CHPV, demonstrating efficacy in animal models, but human trials have not yet materialized due to scale and safety considerations.
+              <strong>{translate('therapeutics_vaccine_2_title', language)}</strong> {translate('therapeutics_vaccine_2_desc', language)}
             </li>
             <li>
-              <strong>mRNA & Vector Platforms:</strong> Emerging platforms utilized during the COVID-19 pandemic are currently being investigated for rapid deployment against CHPV G-protein.
+              <strong>{translate('therapeutics_vaccine_3_title', language)}</strong> {translate('therapeutics_vaccine_3_desc', language)}
             </li>
           </ul>
         </div>
 
         <div className="glass-panel" style={{flexBasis: '100%'}}>
-          <h3>Drug Repurposing & In Vitro Studies</h3>
+          <h3>{translate('therapeutics_drug_repurposing', language)}</h3>
           <div style={{marginTop: '1rem'}}>
             <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
               <li style={{marginBottom: '10px'}}>
-                <strong>Favipiravir:</strong> A broad-spectrum RNA polymerase inhibitor that has demonstrated significant antiviral activity against CHPV in vitro and in vivo by targeting the L polymerase. It shows particularly promising preclinical leads.<sup><a href="#ref-8">[8]</a></sup>
+                <strong>{translate('therapeutics_drug_1_title', language)}</strong> {translate('therapeutics_drug_1_desc', language)}<sup><a href="#ref-8">[8]</a></sup>
               </li>
               <li style={{marginBottom: '10px'}}>
-                <strong>RNA Interference (RNAi):</strong> Small interfering RNAs (siRNAs) targeting the virus-induced apoptosis pathway (e.g., caspase-3) or specific viral transcripts have successfully reduced viral titers and neuronal apoptosis in cellular models.<sup><a href="#ref-7">[7]</a></sup>
+                <strong>{translate('therapeutics_drug_2_title', language)}</strong> {translate('therapeutics_drug_2_desc', language)}<sup><a href="#ref-7">[7]</a></sup>
               </li>
               <li>
-                <strong>Host-Directed Therapies (Transcriptomic Insights):</strong> A 2026 time-resolved transcriptomic study (PMID: 42074008) mapped the dynamic host response to CHPV infection, revealing how the virus systematically takes over the cell.<sup><a href="#ref-14">[14]</a></sup>
+                <strong>{translate('therapeutics_drug_3_title', language)}</strong> {translate('therapeutics_drug_3_desc', language)}<sup><a href="#ref-14">[14]</a></sup>
                 <div style={{marginTop: '0.8rem', fontSize: '0.9rem', background: 'rgba(0,0,0,0.1)', padding: '10px', borderRadius: '8px'}}>
                   <ul style={{listStyle: 'square', paddingLeft: '20px'}}>
-                    <li style={{marginBottom: '4px'}}><strong>Early (6h - 12h):</strong> Massive activation of innate immune/inflammatory pathways (ISGs) while suppressing standard metabolic processes.</li>
-                    <li style={{marginBottom: '4px'}}><strong>Late (18h - 24h):</strong> The virus reprograms host lipid and sphingolipid metabolism for its own replication, followed by a global transcriptional shutdown (repression of chromatin organization and ribosome biogenesis) leading to cell death.</li>
+                    <li style={{marginBottom: '4px'}}><strong>{translate('therapeutics_early_stage', language)}</strong> {translate('therapeutics_early_desc', language)}</li>
+                    <li style={{marginBottom: '4px'}}><strong>{translate('therapeutics_late_stage', language)}</strong> {translate('therapeutics_late_desc', language)}</li>
                   </ul>
                   <p style={{marginTop: '0.5rem', fontStyle: 'italic', color: 'var(--accent-color)'}}>
-                    By mapping these temporal stages, researchers identified specific host pathways amenable to pharmacological targeting. Notably, the host-directed drugs <strong>romidepsin</strong> and <strong>sulphasalazine</strong> demonstrated significant antiviral efficacy in neuronal cell culture models.
+                    {translate('therapeutics_host_target_desc', language)} <strong>{translate('therapeutics_drug_romidepsin', language)}</strong> {translate('therapeutics_drug_and', language)} <strong>{translate('therapeutics_drug_sulphasalazine', language)}</strong> {translate('therapeutics_host_target_efficacy', language)}
                   </p>
                 </div>
               </li>
