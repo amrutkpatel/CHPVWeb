@@ -33,10 +33,7 @@ const Therapeutics = () => {
           <div className="grid-layout" style={{marginTop: '1rem'}}>
             <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
               <li style={{marginBottom: '10px'}}>
-                <strong>Favipiravir & Ribavirin:</strong> Broad-spectrum RNA polymerase inhibitors have demonstrated significant antiviral activity against CHPV in vitro by targeting the L polymerase. Favipiravir shows particularly promising preclinical leads.<sup><a href="#ref-8">[8]</a></sup>
-              </li>
-              <li style={{marginBottom: '10px'}}>
-                <strong>Mycophenolic Acid (MPA):</strong> This immunosuppressant has been shown in recent in vitro studies to potently inhibit CHPV replication, likely by depleting intracellular guanosine pools.
+                <strong>Favipiravir:</strong> A broad-spectrum RNA polymerase inhibitor that has demonstrated significant antiviral activity against CHPV in vitro and in vivo by targeting the L polymerase. It shows particularly promising preclinical leads.<sup><a href="#ref-8">[8]</a></sup>
               </li>
             </ul>
             <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
