@@ -12,10 +12,10 @@ const Ecology = ({ language }) => {
           <div>
             <h4>{translate('primary_vectors', language)}</h4>
             <p>
-              <strong>{translate('phlebotomine_sandflies', language)}</strong> {translate('phlebotomine_desc', language)}<sup><a href="#ref-12">[12]</a></sup>
+              <strong>{translate('phlebotomine_sandflies', language)}</strong> {translate('phlebotomine_desc', language)}<sup><a href="#ref-13">[13]</a></sup>
             </p>
             <p style={{marginTop: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)'}}>
-              {translate('sandfly_vertical_transmission', language)}<sup><a href="#ref-3">[3]</a></sup>
+              {translate('sandfly_vertical_transmission', language)}<sup><a href="#ref-4">[4]</a></sup>
             </p>
           </div>
           <div>
@@ -24,8 +24,8 @@ const Ecology = ({ language }) => {
               {translate('intermediate_hosts_desc', language)}
             </p>
             <ul style={{listStyle: 'circle', paddingLeft: '20px', marginTop: '0.5rem'}}>
-              <li style={{marginBottom: '0.5rem'}}><strong>{translate('intermediate_hosts_amplifiers', language)}</strong> {translate('intermediate_hosts_detail', language)}<sup><a href="#ref-11">[11]</a></sup></li>
-              <li style={{marginBottom: '0.5rem'}}><strong>{translate('reservoir_hosts', language)}</strong> {translate('reservoir_hosts_detail', language)}<sup><a href="#ref-11">[11]</a></sup></li>
+              <li style={{marginBottom: '0.5rem'}}><strong>{translate('intermediate_hosts_amplifiers', language)}</strong> {translate('intermediate_hosts_detail', language)}<sup><a href="#ref-12">[12]</a></sup></li>
+              <li style={{marginBottom: '0.5rem'}}><strong>{translate('reservoir_hosts', language)}</strong> {translate('reservoir_hosts_detail', language)}<sup><a href="#ref-12">[12]</a></sup></li>
             </ul>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Ecology = ({ language }) => {
           {translate('geographic_shift_note', language)}
         </p>
         <p style={{marginTop: '1rem'}}>
-          {translate('geographic_shift_detail', language)}<sup><a href="#ref-3">[3]</a></sup>
+          {translate('geographic_shift_detail', language)}<sup><a href="#ref-4">[4]</a></sup>
         </p>
       </div>
 

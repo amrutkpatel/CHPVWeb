@@ -8,7 +8,7 @@ const Genomics = ({ language }) => {
       <div className="glass-panel" style={{marginBottom: '2rem'}}>
         <h3>{translate('genomics_sub_heading', language)}</h3>
         <p>
-          {translate('genomics_pub_desc', language)}<sup><a href="#ref-5">[5]</a></sup>
+          {translate('genomics_pub_desc', language)}<sup><a href="#ref-6">[6]</a></sup>
         </p>
         <div style={{display: 'flex', gap: '2rem', marginTop: '1rem', flexWrap: 'wrap'}}>
           <div style={{flex: 1, background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '8px'}}>

@@ -6,7 +6,7 @@ const Epidemiology = ({ language }) => {
       <h2 className="section-title">{translate('epidemiology_heading', language)}</h2>
       
       <p style={{textAlign: 'center', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem'}}>
-        {translate('epi_major_burden', language)}<sup><a href="#ref-11">[11]</a></sup>
+        {translate('epi_major_burden', language)}<sup><a href="#ref-12">[12]</a></sup>
       </p>
 
       <div className="glass-panel" style={{marginBottom: '2rem'}}>
@@ -20,10 +20,10 @@ const Epidemiology = ({ language }) => {
                 <strong>{translate('epi_2003_ap_title', language)}</strong> {translate('epi_2003_ap_desc', language)}<sup><a href="#ref-1">[1]</a></sup>
               </li>
               <li style={{marginBottom: '10px'}}>
-                <strong>{translate('epi_2024_gujarat_title', language)}</strong> {translate('epi_2024_gujarat_desc', language)}<sup><a href="#ref-4">[4]</a></sup>
+                <strong>{translate('epi_2024_gujarat_title', language)}</strong> {translate('epi_2024_gujarat_desc', language)}<sup><a href="#ref-5">[5]</a></sup>
               </li>
               <li>
-                <strong>{translate('epi_2024_genomic_title', language)}</strong> {translate('epi_2024_genomic_desc', language)}<sup><a href="#ref-13">[13]</a></sup>
+                <strong>{translate('epi_2024_genomic_title', language)}</strong> {translate('epi_2024_genomic_desc', language)}<sup><a href="#ref-14">[14]</a></sup>
               </li>
             </ul>
             <p style={{marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)'}}>
@@ -41,7 +41,7 @@ const Epidemiology = ({ language }) => {
                 <strong>{translate('epi_igm_window_title', language)}</strong> {translate('epi_igm_window_desc1', language)} <strong>{translate('epi_after_day_4', language)}</strong> {translate('epi_igm_window_desc2', language)}<sup><a href="#ref-1">[1]</a></sup>
               </li>
               <li style={{marginBottom: '10px'}}>
-                <strong>{translate('epi_igg_pop_title', language)}</strong> {translate('epi_igg_pop_desc', language)}<sup><a href="#ref-11">[11]</a></sup>
+                <strong>{translate('epi_igg_pop_title', language)}</strong> {translate('epi_igg_pop_desc', language)}<sup><a href="#ref-12">[12]</a></sup>
               </li>
             </ul>
           </div>
@@ -53,7 +53,7 @@ const Epidemiology = ({ language }) => {
           <div className="timeline-content">
             <div className="timeline-date">1965</div>
             <h3>{translate('epi_timeline_1965_title', language)}</h3>
-            <p>{translate('epi_timeline_1965_desc', language)}<sup><a href="#ref-2">[2]</a></sup></p>
+            <p>{translate('epi_timeline_1965_desc', language)}<sup><a href="#ref-3">[3]</a></sup></p>
           </div>
         </div>
         <div className="timeline-item right">
@@ -67,14 +67,14 @@ const Epidemiology = ({ language }) => {
           <div className="timeline-content">
             <div className="timeline-date">2004 - 2012</div>
             <h3>{translate('epi_timeline_recurring_title', language)}</h3>
-            <p>{translate('epi_timeline_recurring_desc', language)}<sup><a href="#ref-11">[11]</a></sup></p>
+            <p>{translate('epi_timeline_recurring_desc', language)}<sup><a href="#ref-12">[12]</a></sup></p>
           </div>
         </div>
         <div className="timeline-item right">
           <div className="timeline-content">
             <div className="timeline-date">2024</div>
             <h3>{translate('epi_timeline_2024_title', language)}</h3>
-            <p>{translate('epi_timeline_2024_desc', language)}<sup><a href="#ref-4">[4]</a><a href="#ref-5">[5]</a><a href="#ref-13">[13]</a></sup></p>
+            <p>{translate('epi_timeline_2024_desc', language)}<sup><a href="#ref-5">[5]</a><a href="#ref-6">[6]</a><a href="#ref-14">[14]</a></sup></p>
           </div>
         </div>
       </div>

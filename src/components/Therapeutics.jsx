@@ -17,7 +17,7 @@ const Therapeutics = ({ language }) => {
           <h3>{translate('therapeutics_vaccine_dev', language)}</h3>
           <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
             <li style={{marginBottom: '10px'}}>
-              <strong>{translate('therapeutics_vaccine_1_title', language)}</strong> {translate('therapeutics_vaccine_1_desc', language)}<sup><a href="#ref-6">[6]</a></sup>
+              <strong>{translate('therapeutics_vaccine_1_title', language)}</strong> {translate('therapeutics_vaccine_1_desc', language)}<sup><a href="#ref-7">[7]</a></sup>
             </li>
             <li style={{marginBottom: '10px'}}>
               <strong>{translate('therapeutics_vaccine_2_title', language)}</strong> {translate('therapeutics_vaccine_2_desc', language)}
@@ -33,13 +33,13 @@ const Therapeutics = ({ language }) => {
           <div style={{marginTop: '1rem'}}>
             <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
               <li style={{marginBottom: '10px'}}>
-                <strong>{translate('therapeutics_drug_1_title', language)}</strong> {translate('therapeutics_drug_1_desc', language)}<sup><a href="#ref-8">[8]</a></sup>
+                <strong>{translate('therapeutics_drug_1_title', language)}</strong> {translate('therapeutics_drug_1_desc', language)}<sup><a href="#ref-9">[9]</a></sup>
               </li>
               <li style={{marginBottom: '10px'}}>
-                <strong>{translate('therapeutics_drug_2_title', language)}</strong> {translate('therapeutics_drug_2_desc', language)}<sup><a href="#ref-7">[7]</a></sup>
+                <strong>{translate('therapeutics_drug_2_title', language)}</strong> {translate('therapeutics_drug_2_desc', language)}<sup><a href="#ref-8">[8]</a></sup>
               </li>
               <li>
-                <strong>{translate('therapeutics_drug_3_title', language)}</strong> {translate('therapeutics_drug_3_desc', language)}<sup><a href="#ref-14">[14]</a></sup>
+                <strong>{translate('therapeutics_drug_3_title', language)}</strong> {translate('therapeutics_drug_3_desc', language)}<sup><a href="#ref-15">[15]</a></sup>
                 <div style={{marginTop: '0.8rem', fontSize: '0.9rem', background: 'rgba(0,0,0,0.1)', padding: '10px', borderRadius: '8px'}}>
                   <ul style={{listStyle: 'square', paddingLeft: '20px'}}>
                     <li style={{marginBottom: '4px'}}><strong>{translate('therapeutics_early_stage', language)}</strong> {translate('therapeutics_early_desc', language)}</li>
