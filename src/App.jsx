@@ -27,6 +27,13 @@ function App() {
     'roadmap'
   ];
 
+  useEffect(() => {
+    const activeBtn = document.querySelector('.side-nav button.active');
+    if (activeBtn) {
+      activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+  }, [activeTab]);
+
   const handleTouchStart = (e) => {
     setTouchStartX(e.targetTouches[0].clientX);
   };
