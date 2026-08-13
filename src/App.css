@@ -193,4 +193,22 @@
   .right {
     left: 0%;
   }
+
+  /* Mobile Tabs Scrolling */
+  .sticky-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .sticky-nav::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Edge */
+  }
+  .sticky-nav button {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
 }
