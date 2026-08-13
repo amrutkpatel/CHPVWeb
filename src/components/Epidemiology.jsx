@@ -23,7 +23,7 @@ const Epidemiology = () => {
                 <strong>2024 Gujarat Outbreak:</strong> 245 suspected AES cases, 64 laboratory-confirmed CHPV infections (<strong>~26% Positivity</strong>).<sup><a href="#ref-4">[4]</a></sup>
               </li>
               <li>
-                <strong>2026 Gujarat Resurgence:</strong> ~184 suspected cases, 35 lab-confirmed (<strong>~19% Positivity</strong>) early in the outbreak.<sup><a href="#ref-13">[13]</a></sup>
+                <strong>2024 Genomic Surveillance (Published 2026):</strong> An analysis of 184 suspected cases yielded 35 lab-confirmed cases early in the outbreak, providing newly sequenced whole-genome data.<sup><a href="#ref-13">[13]</a></sup>
               </li>
             </ul>
             <p style={{marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)'}}>
@@ -74,14 +74,7 @@ const Epidemiology = () => {
           <div className="timeline-content">
             <div className="timeline-date">2024</div>
             <h3>Major Gujarat Outbreak</h3>
-            <p>Largest in two decades. 245 AES cases, 82 deaths, 64 lab-confirmed CHPV infections.<sup><a href="#ref-4">[4]</a></sup></p>
-          </div>
-        </div>
-        <div className="timeline-item left">
-          <div className="timeline-content">
-            <div className="timeline-date">2026</div>
-            <h3>Current Resurgence</h3>
-            <p>Ongoing outbreak with newly sequenced whole-genome data showing ~293 nucleotide changes.<sup><a href="#ref-5">[5]</a><a href="#ref-13">[13]</a></sup></p>
+            <p>Largest in two decades. 245 AES cases, 82 deaths. Genomic analysis (published in 2026) showed ~293 nucleotide changes.<sup><a href="#ref-4">[4]</a><a href="#ref-5">[5]</a><a href="#ref-13">[13]</a></sup></p>
           </div>
         </div>
       </div>
