@@ -43,7 +43,8 @@ function App() {
       </nav>
       
       <main className="main-content">
-        <div className="container" style={{ minHeight: '60vh', paddingTop: '2rem' }}>
+        <h1 className="hero-title" style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '1rem', padding: '0 1rem' }}>Chandipura Virus (CHPV)</h1>
+        <div className="container" style={{ minHeight: '60vh', paddingTop: '1rem' }}>
           {activeTab === 'hero' && <div id="hero"><Hero /></div>}
           {activeTab === 'epidemiology' && <Epidemiology />}
           {activeTab === 'ecology' && <Ecology />}

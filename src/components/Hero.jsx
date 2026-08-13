@@ -2,8 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <header className="app-header">
-      <h1 className="hero-title">Chandipura Virus (CHPV)</h1>
+    <header className="app-header" style={{ minHeight: 'auto', padding: '0' }}>
       <p className="hero-subtitle">
         An emerging pediatric threat. A rapidly progressive acute encephalitis syndrome with extraordinarily fast clinical progression.
       </p>
