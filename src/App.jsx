@@ -27,8 +27,8 @@ function App() {
   };
 
   return (
-    <>
-      <nav className="sticky-nav">
+    <div className="app-layout">
+      <nav className="side-nav">
         <div className="nav-container">
           <button className={activeTab === 'hero' ? 'active' : ''} onClick={() => setActiveTab('hero')}>Overview</button>
           <button className={activeTab === 'epidemiology' ? 'active' : ''} onClick={() => setActiveTab('epidemiology')}>Epidemiology</button>
@@ -42,23 +42,24 @@ function App() {
         </div>
       </nav>
       
-      <div className="container" style={{ minHeight: '60vh', paddingTop: '2rem' }}>
-        {activeTab === 'hero' && <div id="hero"><Hero /></div>}
-        {activeTab === 'epidemiology' && <Epidemiology />}
-        {activeTab === 'ecology' && <Ecology />}
-        {activeTab === 'virology' && <Virology />}
-        {activeTab === 'genomics' && <Genomics />}
-        {activeTab === 'diagnosis' && <Diagnosis />}
-        {activeTab === 'therapeutics' && <Therapeutics />}
-        {activeTab === 'knowledge-matrix' && <KnowledgeMatrix />}
-        {activeTab === 'roadmap' && <ResearchRoadmap />}
-      </div>
-      
-      <div className="container">
-        <References citedIds={tabReferences[activeTab]} />
-      </div>
-
-    </>
+      <main className="main-content">
+        <div className="container" style={{ minHeight: '60vh', paddingTop: '2rem' }}>
+          {activeTab === 'hero' && <div id="hero"><Hero /></div>}
+          {activeTab === 'epidemiology' && <Epidemiology />}
+          {activeTab === 'ecology' && <Ecology />}
+          {activeTab === 'virology' && <Virology />}
+          {activeTab === 'genomics' && <Genomics />}
+          {activeTab === 'diagnosis' && <Diagnosis />}
+          {activeTab === 'therapeutics' && <Therapeutics />}
+          {activeTab === 'knowledge-matrix' && <KnowledgeMatrix />}
+          {activeTab === 'roadmap' && <ResearchRoadmap />}
+        </div>
+        
+        <div className="container">
+          <References citedIds={tabReferences[activeTab]} />
+        </div>
+      </main>
+    </div>
   )
 }
 
