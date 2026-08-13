@@ -11,7 +11,7 @@ const Hero = ({ language }) => {
       
       <div className="hero-stats">
         <div className="stat-item">
-          <div className="stat-value">50-75%<sup><a href="#ref-1">[1]</a></sup></div>
+          <div className="stat-value">33-75%<sup><a href="#ref-1">[1]</a>, <a href="#ref-16">[16]</a></sup></div>
           <div className="stat-label">{translate('hero_stat_cfr', language)}</div>
         </div>
         <div className="stat-item">

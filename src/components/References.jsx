@@ -16,7 +16,8 @@ const References = ({ citedIds, language }) => {
     { id: 12, text: translate('ref_12', language) },
     { id: 13, text: translate('ref_13', language) },
     { id: 14, text: translate('ref_14', language) },
-    { id: 15, text: translate('ref_15', language) }
+    { id: 15, text: translate('ref_15', language) },
+    { id: 16, text: translate('ref_16', language) }
   ];
 
   const referencesToDisplay = citedIds 
