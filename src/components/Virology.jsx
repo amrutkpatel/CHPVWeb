@@ -30,7 +30,7 @@ const Virology = () => {
           </ul>
         </div>
 
-        <div className="glass-panel" style={{gridColumn: '1 / -1'}}>
+        <div className="glass-panel" style={{flexBasis: '100%'}}>
           <h3>Pathogenesis Model</h3>
           <p style={{color: 'var(--accent-color)', fontWeight: 'bold', fontSize: '1.2rem', textAlign: 'center', margin: '2rem 0'}}>
             Vector Bite ➔ Peripheral Infection ➔ Viraemia ➔ CNS Access ➔ Neuronal Infection ➔ Intense Innate Immune Response + Neuronal Apoptosis ➔ Rapid Encephalitis

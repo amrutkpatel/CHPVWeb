@@ -54,7 +54,7 @@ const Diagnosis = () => {
           </div>
         </div>
 
-        <div className="glass-panel" style={{gridColumn: '1 / -1'}}>
+        <div className="glass-panel" style={{flexBasis: '100%'}}>
           <h3>Advanced & Future Modalities</h3>
           <div className="grid-layout" style={{marginTop: '1rem'}}>
             <div>

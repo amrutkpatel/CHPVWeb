@@ -28,7 +28,7 @@ const Therapeutics = () => {
           </ul>
         </div>
 
-        <div className="glass-panel" style={{gridColumn: '1 / -1'}}>
+        <div className="glass-panel" style={{flexBasis: '100%'}}>
           <h3>Drug Repurposing & In Vitro Studies</h3>
           <div className="grid-layout" style={{marginTop: '1rem'}}>
             <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
