@@ -56,9 +56,6 @@ function App() {
         <References citedIds={tabReferences[activeTab]} />
       </div>
 
-      <footer style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-secondary)', borderTop: '1px solid var(--surface-border)', marginTop: '4rem' }}>
-        <p>Data based on 2026 genomic study & WHO reports</p>
-      </footer>
     </>
   )
 }
