@@ -13,6 +13,42 @@ import References from './components/References'
 
 function App() {
   const [activeTab, setActiveTab] = useState('hero')
+  const [touchStartX, setTouchStartX] = useState(null)
+
+  const tabs = [
+    'hero',
+    'epidemiology',
+    'ecology',
+    'virology',
+    'genomics',
+    'diagnosis',
+    'therapeutics',
+    'knowledge-matrix',
+    'roadmap'
+  ];
+
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const distance = touchStartX - touchEndX;
+    const minSwipeDistance = 50; // minimum distance to be considered a swipe
+
+    if (Math.abs(distance) > minSwipeDistance) {
+      const currentIndex = tabs.indexOf(activeTab);
+      if (distance > 0 && currentIndex < tabs.length - 1) {
+        // Swipe left -> next tab
+        setActiveTab(tabs[currentIndex + 1]);
+      } else if (distance < 0 && currentIndex > 0) {
+        // Swipe right -> previous tab
+        setActiveTab(tabs[currentIndex - 1]);
+      }
+    }
+    setTouchStartX(null);
+  };
 
   const tabReferences = {
     'hero': [1],
@@ -42,7 +78,11 @@ function App() {
         </div>
       </nav>
       
-      <main className="main-content">
+      <main 
+        className="main-content"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <h1 className="hero-title" style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '1rem', padding: '0 1rem' }}>Chandipura Virus (CHPV)</h1>
         <div className="container" style={{ minHeight: '60vh', paddingTop: '1rem' }}>
           {activeTab === 'hero' && <div id="hero"><Hero /></div>}
