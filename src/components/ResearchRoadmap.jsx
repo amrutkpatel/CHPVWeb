@@ -18,29 +18,31 @@ const ResearchRoadmap = () => {
 
       <div className="glass-panel">
         <h3>Therapeutics Pipeline</h3>
-        <div style={{marginTop: '1rem'}}>
-          <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
-            <span style={{width: '120px', fontWeight: 'bold'}}>Discovery</span>
-            <div style={{flex: 1, background: 'rgba(255,255,255,0.1)', height: '8px', borderRadius: '4px', position: 'relative'}}>
-               <div style={{position: 'absolute', top: '-10px', left: '10%', background: 'var(--surface-color)', padding: '2px 8px', borderRadius: '4px', border: '1px solid var(--surface-border)', fontSize: '0.8rem'}}>mAbs / mRNA Vaccines</div>
+        <div style={{marginTop: '2rem'}}>
+          
+          <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
+            <span style={{fontWeight: 'bold', color: 'var(--text-secondary)'}}>Discovery</span>
+            <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.8rem', borderLeft: '3px solid var(--surface-border)', paddingLeft: '1rem'}}>
+               <div style={{background: 'var(--bg-color)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--surface-border)', fontSize: '0.85rem'}}>mAbs / mRNA Vaccines</div>
             </div>
           </div>
           
-          <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
-            <span style={{width: '120px', fontWeight: 'bold'}}>Preclinical</span>
-            <div style={{flex: 1, background: 'rgba(255,255,255,0.1)', height: '8px', borderRadius: '4px', position: 'relative'}}>
-              <div style={{position: 'absolute', top: '-10px', left: '50%', background: 'var(--surface-color)', padding: '2px 8px', borderRadius: '4px', border: '1px solid #10b981', color: '#10b981', fontSize: '0.8rem'}}>Favipiravir</div>
-              <div style={{position: 'absolute', top: '15px', left: '40%', background: 'var(--surface-color)', padding: '2px 8px', borderRadius: '4px', border: '1px solid #10b981', color: '#10b981', fontSize: '0.8rem'}}>Recombinant G Protein</div>
-              <div style={{position: 'absolute', top: '-10px', left: '30%', background: 'var(--surface-color)', padding: '2px 8px', borderRadius: '4px', border: '1px solid #f59e0b', color: '#f59e0b', fontSize: '0.8rem'}}>siRNA</div>
+          <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem'}}>
+            <span style={{fontWeight: 'bold', color: 'var(--text-secondary)'}}>Preclinical</span>
+            <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.8rem', borderLeft: '3px solid #10b981', paddingLeft: '1rem'}}>
+               <div style={{background: 'rgba(16, 185, 129, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #10b981', color: '#10b981', fontSize: '0.85rem'}}>Favipiravir</div>
+               <div style={{background: 'rgba(16, 185, 129, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #10b981', color: '#10b981', fontSize: '0.85rem'}}>Recombinant G Protein</div>
+               <div style={{background: 'rgba(245, 158, 11, 0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid #f59e0b', color: '#f59e0b', fontSize: '0.85rem'}}>siRNA</div>
             </div>
           </div>
           
-          <div style={{display: 'flex', alignItems: 'center'}}>
-            <span style={{width: '120px', fontWeight: 'bold', color: '#ef4444'}}>Clinical</span>
-            <div style={{flex: 1, background: 'rgba(239, 68, 68, 0.2)', height: '8px', borderRadius: '4px', position: 'relative'}}>
-              <div style={{position: 'absolute', top: '-10px', left: '10%', color: '#ef4444', fontSize: '0.8rem', fontStyle: 'italic'}}>No established clinical programmes identified</div>
+          <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem'}}>
+            <span style={{fontWeight: 'bold', color: '#ef4444'}}>Clinical</span>
+            <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.8rem', borderLeft: '3px solid #ef4444', paddingLeft: '1rem'}}>
+               <div style={{color: '#ef4444', fontSize: '0.9rem', fontStyle: 'italic', padding: '4px 0'}}>No established clinical programmes identified</div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
