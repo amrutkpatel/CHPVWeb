@@ -46,7 +46,7 @@ const Therapeutics = () => {
                     <li style={{marginBottom: '4px'}}><strong>Late (18h - 24h):</strong> The virus reprograms host lipid and sphingolipid metabolism for its own replication, followed by a global transcriptional shutdown (repression of chromatin organization and ribosome biogenesis) leading to cell death.</li>
                   </ul>
                   <p style={{marginTop: '0.5rem', fontStyle: 'italic', color: 'var(--accent-color)'}}>
-                    By mapping these temporal stages, researchers have identified specific host pathways amenable to pharmacological targeting, with novel host-directed compounds already showing promising in vitro antiviral activity in neuronal cell lines.
+                    By mapping these temporal stages, researchers identified specific host pathways amenable to pharmacological targeting. Notably, the host-directed drugs <strong>romidepsin</strong> and <strong>sulphasalazine</strong> demonstrated significant antiviral efficacy in neuronal cell culture models.
                   </p>
                 </div>
               </li>

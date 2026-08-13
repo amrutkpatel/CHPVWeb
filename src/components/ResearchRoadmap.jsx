@@ -25,7 +25,7 @@ const ResearchRoadmap = () => {
             <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.8rem', borderLeft: '3px solid var(--surface-border)', paddingLeft: '1rem'}}>
                <div style={{background: 'var(--bg-color)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--surface-border)', fontSize: '0.85rem'}}>mAbs (Therapeutic)</div>
                <div style={{background: 'var(--bg-color)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--surface-border)', fontSize: '0.85rem'}}>mRNA (Vaccine)</div>
-               <div style={{background: 'var(--bg-color)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--surface-border)', fontSize: '0.85rem'}}>Host-directed Antivirals (Therapeutic)</div>
+               <div style={{background: 'var(--bg-color)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--surface-border)', fontSize: '0.85rem'}}>Romidepsin & Sulphasalazine (Therapeutic)</div>
             </div>
           </div>
           
