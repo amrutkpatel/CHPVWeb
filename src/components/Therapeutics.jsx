@@ -30,13 +30,11 @@ const Therapeutics = () => {
 
         <div className="glass-panel" style={{flexBasis: '100%'}}>
           <h3>Drug Repurposing & In Vitro Studies</h3>
-          <div className="grid-layout" style={{marginTop: '1rem'}}>
+          <div style={{marginTop: '1rem'}}>
             <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
               <li style={{marginBottom: '10px'}}>
                 <strong>Favipiravir:</strong> A broad-spectrum RNA polymerase inhibitor that has demonstrated significant antiviral activity against CHPV in vitro and in vivo by targeting the L polymerase. It shows particularly promising preclinical leads.<sup><a href="#ref-8">[8]</a></sup>
               </li>
-            </ul>
-            <ul style={{listStyle: 'circle', paddingLeft: '20px'}}>
               <li style={{marginBottom: '10px'}}>
                 <strong>RNA Interference (RNAi):</strong> Small interfering RNAs (siRNAs) targeting the virus-induced apoptosis pathway (e.g., caspase-3) or specific viral transcripts have successfully reduced viral titers and neuronal apoptosis in cellular models.<sup><a href="#ref-7">[7]</a></sup>
               </li>

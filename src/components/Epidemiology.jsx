@@ -12,7 +12,7 @@ const Epidemiology = () => {
       <div className="glass-panel" style={{marginBottom: '2rem'}}>
         <h3 style={{color: 'var(--accent-color)'}}>Seropositivity & Case Positivity Rates</h3>
         
-        <div className="grid-layout" style={{marginTop: '1.5rem', marginBottom: '1.5rem'}}>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem', marginTop: '1.5rem', marginBottom: '1.5rem'}}>
           <div style={{background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '8px'}}>
             <h4>Case Positivity (Lab-Confirmed / Suspected AES)</h4>
             <ul style={{listStyle: 'none', padding: 0, marginTop: '0.5rem', fontSize: '0.95rem'}}>
