@@ -61,13 +61,13 @@ function App() {
   };
 
   const tabReferences = {
-    'hero': [1],
-    'epidemiology': [1, 2, 4, 5, 11, 13],
-    'ecology': [3, 11, 12],
-    'virology': [6, 7, 15],
-    'genomics': [5],
+    'hero': [1, 2],
+    'epidemiology': [1, 3, 5, 6, 12, 14],
+    'ecology': [4, 12, 13],
+    'virology': [7, 8, 16],
+    'genomics': [6],
     'diagnosis': [1],
-    'therapeutics': [6, 7, 8, 14],
+    'therapeutics': [7, 8, 9, 15],
     'knowledge-matrix': [],
     'roadmap': []
   };
