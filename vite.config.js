@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      injectRegister: 'auto',
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'virus-icon.svg'],
       manifest: {
@@ -19,7 +20,13 @@ export default defineConfig({
         icons: [
           {
             src: 'virus-icon.svg',
-            sizes: '192x192 512x512',
+            sizes: '192x192',
+            type: 'image/svg+xml',
+            purpose: 'any maskable'
+          },
+          {
+            src: 'virus-icon.svg',
+            sizes: '512x512',
             type: 'image/svg+xml',
             purpose: 'any maskable'
           }
