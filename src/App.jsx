@@ -29,15 +29,17 @@ function App() {
   return (
     <>
       <nav className="sticky-nav">
-        <button className={activeTab === 'hero' ? 'active' : ''} onClick={() => setActiveTab('hero')}>Overview</button>
-        <button className={activeTab === 'epidemiology' ? 'active' : ''} onClick={() => setActiveTab('epidemiology')}>Epidemiology</button>
-        <button className={activeTab === 'ecology' ? 'active' : ''} onClick={() => setActiveTab('ecology')}>Ecology</button>
-        <button className={activeTab === 'virology' ? 'active' : ''} onClick={() => setActiveTab('virology')}>Biology</button>
-        <button className={activeTab === 'genomics' ? 'active' : ''} onClick={() => setActiveTab('genomics')}>Genomics</button>
-        <button className={activeTab === 'diagnosis' ? 'active' : ''} onClick={() => setActiveTab('diagnosis')}>Diagnosis</button>
-        <button className={activeTab === 'therapeutics' ? 'active' : ''} onClick={() => setActiveTab('therapeutics')}>Vaccines & Therapeutics</button>
-        <button className={activeTab === 'knowledge-matrix' ? 'active' : ''} onClick={() => setActiveTab('knowledge-matrix')}>Knowledge Matrix</button>
-        <button className={activeTab === 'roadmap' ? 'active' : ''} onClick={() => setActiveTab('roadmap')}>Research</button>
+        <div className="nav-container">
+          <button className={activeTab === 'hero' ? 'active' : ''} onClick={() => setActiveTab('hero')}>Overview</button>
+          <button className={activeTab === 'epidemiology' ? 'active' : ''} onClick={() => setActiveTab('epidemiology')}>Epidemiology</button>
+          <button className={activeTab === 'ecology' ? 'active' : ''} onClick={() => setActiveTab('ecology')}>Ecology</button>
+          <button className={activeTab === 'virology' ? 'active' : ''} onClick={() => setActiveTab('virology')}>Biology</button>
+          <button className={activeTab === 'genomics' ? 'active' : ''} onClick={() => setActiveTab('genomics')}>Genomics</button>
+          <button className={activeTab === 'diagnosis' ? 'active' : ''} onClick={() => setActiveTab('diagnosis')}>Diagnosis</button>
+          <button className={activeTab === 'therapeutics' ? 'active' : ''} onClick={() => setActiveTab('therapeutics')}>Vaccines & Therapeutics</button>
+          <button className={activeTab === 'knowledge-matrix' ? 'active' : ''} onClick={() => setActiveTab('knowledge-matrix')}>Knowledge Matrix</button>
+          <button className={activeTab === 'roadmap' ? 'active' : ''} onClick={() => setActiveTab('roadmap')}>Research</button>
+        </div>
       </nav>
       
       <div className="container" style={{ minHeight: '60vh', paddingTop: '2rem' }}>
