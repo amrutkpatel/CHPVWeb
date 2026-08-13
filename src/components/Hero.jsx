@@ -23,9 +23,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <button className="btn" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
-        Explore the Science
-      </button>
+
     </header>
   );
 };
