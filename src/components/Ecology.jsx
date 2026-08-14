@@ -14,9 +14,14 @@ const Ecology = ({ language }) => {
             <p>
               <strong>{translate('phlebotomine_sandflies', language)}</strong> {translate('phlebotomine_desc', language)}<sup><a href="#ref-13">[13]</a></sup>
             </p>
-            <p style={{marginTop: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)'}}>
-              {translate('sandfly_vertical_transmission', language)}<sup><a href="#ref-4">[4]</a></sup>
-            </p>
+            <ul style={{listStyle: 'circle', paddingLeft: '20px', marginTop: '1rem'}}>
+              <li style={{marginBottom: '0.5rem'}}>
+                <strong>{translate('phlebotomus_argentipes_title', language)}:</strong> {translate('phlebotomus_argentipes_desc', language)}<sup><a href="https://www.sciencedirect.com/science/article/pii/S2666991925001587" target="_blank" rel="noreferrer">[1]</a><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/iid3.70389" target="_blank" rel="noreferrer">[2]</a></sup>
+              </li>
+              <li style={{marginBottom: '0.5rem'}}>
+                <strong>{translate('sergentomyia_species_title', language)}:</strong> {translate('sergentomyia_species_desc', language)}
+              </li>
+            </ul>
           </div>
           <div>
             <h4>{translate('intermediate_reservoir_hosts', language)}</h4>

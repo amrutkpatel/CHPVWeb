@@ -5,6 +5,17 @@ const Epidemiology = ({ language }) => {
     <section id="epidemiology">
       <h2 className="section-title">{translate('epidemiology_heading', language)}</h2>
       
+      <div className="glass-panel" style={{
+        borderLeft: '4px solid var(--accent-color)', 
+        padding: '1rem 1.5rem', 
+        marginBottom: '2rem',
+        maxWidth: '800px',
+        margin: '0 auto 2rem'
+      }}>
+        <strong style={{color: 'var(--accent-color)'}}>{translate('epi_seasonal_alert_title', language)}: </strong>
+        {translate('epi_seasonal_alert', language)}
+      </div>
+
       <p style={{textAlign: 'center', marginBottom: '3rem', maxWidth: '800px', margin: '0 auto 3rem'}}>
         {translate('epi_major_burden', language)}<sup><a href="#ref-12">[12]</a></sup>
       </p>
