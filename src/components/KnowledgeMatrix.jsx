@@ -45,6 +45,9 @@ const KnowledgeMatrix = ({ language }) => {
             <li style={{marginBottom: '0.8rem'}}>{translate('matrix_unk_5', language)}</li>
             <li style={{marginBottom: '0.8rem'}}>{translate('matrix_unk_6', language)}</li>
             <li style={{marginBottom: '0.8rem'}}>{translate('matrix_unk_7', language)}</li>
+            <li style={{marginBottom: '0.8rem'}}>{translate('matrix_unk_8', language)}</li>
+            <li style={{marginBottom: '0.8rem'}}>{translate('matrix_unk_9', language)}</li>
+            <li style={{marginBottom: '0.8rem'}}>{translate('matrix_unk_10', language)}</li>
           </ul>
         </div>
       </div>
